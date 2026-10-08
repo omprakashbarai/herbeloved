@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Herbeloved — premium imitation jewellery made to adore." />
+  <title>Herbeloved | Made to Adore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Free shipping on prepaid orders above ₹999 · Imitation jewellery</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Herbeloved home">
+      <span class="brand-name">HERBELOVED</span>
+      <span class="brand-tagline">MADE TO ADORE</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton" aria-label="Open shopping bag">
+      Bag <span id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Modern imitation jewellery</p>
+        <h1>Made to be loved.<br>Made to be adored.</h1>
+        <p class="hero-copy">Elegant everyday pieces designed to add a little glow to every moment.</p>
+        <a class="button button-gold" href="#shop">Shop the Collection</a>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Shopping benefits">
+      <div><strong>Thoughtfully Selected</strong><span>Elegant designs for every occasion</span></div>
+      <div><strong>Secure Shopping</strong><span>Simple, protected checkout flow</span></div>
+      <div><strong>Made to Adore</strong><span>Premium-looking imitation jewellery</span></div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="section-heading">
+        <p class="eyebrow">Our edit</p>
+        <h2>Featured Jewellery</h2>
+        <p>Start with our signature piece. More collections can be added here as your catalogue grows.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image bracelet-art" role="img" aria-label="Stylised jewellery display for the pink cubic zirconia charm bracelet">
+            <div class="jewel-chain"></div>
+            <div class="jewel-center">◆</div>
+            <div class="jewel-charm charm-one">✦</div>
+            <div class="jewel-charm charm-two">✿</div>
+          </div>
+          <div class="product-info">
+            <p class="product-kicker">Bracelet</p>
+            <h3>Pink CZ Floral Charm Bracelet</h3>
+            <p class="product-description">Gold-plated brass charm bracelet centred around a square pink cubic zirconia stone with delicate floral accents.</p>
+            <div class="product-bottom">
+              <span class="price">₹799</span>
+              <button class="button button-maroon add-to-cart" data-name="Pink CZ Floral Charm Bracelet" data-price="799">Add to Bag</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="about">
+      <div class="story-panel">
+        <p class="eyebrow">Our story</p>
+        <h2>Jewellery for the moments you make your own.</h2>
+        <p>Herbeloved is an imitation jewellery brand by Barai Enterprises, created for women who love refined, expressive pieces without the formality of fine jewellery. Our aim is simple: beautiful designs, wearable style and pieces you will reach for again and again.</p>
+        <p class="signature">Herbeloved · Made to Adore</p>
+      </div>
+      <div class="story-art" aria-hidden="true"><span>HB</span></div>
+    </section>
+
+    <section class="care-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Keep the shine</p>
+        <h2>Jewellery Care</h2>
+      </div>
+      <div class="care-grid">
+        <div><span>01</span><p>Keep away from water, perfume and harsh chemicals.</p></div>
+        <div><span>02</span><p>Wipe gently with a soft, dry cloth after wearing.</p></div>
+        <div><span>03</span><p>Store pieces separately in a dry pouch or box.</p></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Need help?</p>
+        <h2>We’re here for you.</h2>
+        <p>For product, order or collaboration enquiries, connect with Herbeloved through the contact details you choose to publish.</p>
+      </div>
+      <a class="button button-outline" href="mailto:hello@herbeloved.com">Email Herbeloved</a>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Bag</h2>
+      <button id="closeCart" aria-label="Close bag">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="empty-cart">Your bag is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+      <button class="button button-maroon checkout-button" id="checkoutButton">Checkout</button>
+      <small>Checkout integration will be connected to your chosen payment flow.</small>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-name">HERBELOVED</span>
+      <span class="brand-tagline">MADE TO ADORE</span>
+      <p>Premium imitation jewellery for everyday moments.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Explore</h3>
+      <a href="#shop">Shop</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+    <div class="footer-column">
+      <h3>Policies</h3>
+      <a href="policies.html#shipping">Shipping</a>
+      <a href="policies.html#returns">Returns & Refunds</a>
+      <a href="policies.html#privacy">Privacy Policy</a>
+      <a href="policies.html#terms">Terms & Conditions</a>
+    </div>
+    <div class="footer-column">
+      <h3>Follow</h3>
+      <a href="#" aria-label="Instagram link placeholder">Instagram</a>
+      <p>Herbeloved is a brand under Barai Enterprises.</p>
+    </div>
+    <div class="copyright">© <span id="year"></span> Herbeloved. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
